@@ -1,0 +1,45 @@
+<?php
+session_start();
+?>
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1{
+  text-align:center;
+  color:red;
+}
+html, body{
+  width: 100%;
+  height: 100%;
+  color:white;
+  padding: 0px;
+  margin: 0px;
+
+  background: url("http://localhost/cart/images/1.jpg")no-repeat center center fixed;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}</style>
+</head>
+<title></title>
+<body>
+<h1</h1>
+<form action="http://localhost/fcart/login.php" method="post">
+Email:<br>
+<input type="text" name="email">
+<br>
+password:<br>
+<input type="password" name="password">
+<br>
+<br>
+<input type="submit" value="login">
+</form>
+	Click register to create a new account
+<form action="register.html" method="post">
+<input type="submit" value="register">
+</form>
+</body>
+</html>

@@ -1,0 +1,105 @@
+body,h1,h2,h3,p,td,quote,small,form,input,ul,li,ol,label{
+/* resetting some of the styles for browser compatibility */
+	margin:0px;
+	padding:0px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+	color:#555555;
+	font-size:13px;
+	background-color:#282828;
+}
+
+.clear{	/* implementing the clear-fix hack for fixing floated layouts */
+	clear:both;
+}
+
+#main-container{	/* this is the main container, holding the two sections */
+	width:700px;
+	margin:20px auto;
+}
+
+.container{	/* the main container of our content sections - the products and the shopping cart */
+	margin-bottom:40px;
+}
+
+.top-label{	/* the outer span comprising the label */
+	background:url(img/label_bg.png) no-repeat;	/* showing the left part of label_bg.png - a wide round-cornered image */
+	display:inline-block;
+	margin-left:20px;
+	position:relative;
+	margin-bottom:-15px;	/* the whole label is lowered on the product section */
+}
+
+.label-txt{	/* the inner span - red border in the illustration above */
+	background:url(img/label_bg.png) no-repeat top right;	/* shows the right part of the wider label_bg.png */
+	display:inline-block;
+	font-size:10px;
+	height:36px;
+	margin-left:10px;	/* leaves space on the left, so that the outer span can show its background */
+	padding:12px 15px 0 5px;
+	text-transform:uppercase;
+}
+
+.content-area{	/* The top part of the rounded container image, see the illustration above */
+	background:url(img/container_top.png) no-repeat #fcfcfc;
+	padding:15px 20px 0 20px;
+}
+
+.content{	/* shared by the two sections */
+	padding:10px;
+}
+
+.drag-desired{	/* individually targeted properties */
+	background:url(img/drag_desired_label.png) no-repeat top right;
+	padding:30px;
+}
+
+.drop-here{	/* not shared with the other sections */
+	background:url(img/drop_here_label.png) no-repeat top right;
+}
+
+.bottom-container-border{	/* the bottom rounded graphic, that completes the section */
+	background:url(img/container_bottom.png) no-repeat;
+	height:14px;
+}
+
+.product{	/* styling the products */
+	border:2px solid #F5F5F5;
+	float:left;
+	margin:15px;
+	padding:10px;
+}
+
+.product img{
+	cursor:move;
+}
+
+p.descr{
+	padding:5px 0;
+}
+
+small{
+	display:block;
+	margin-top:4px;
+}
+
+.tooltip{	/* the tooltips, this div is created by the simpletip plugin */
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 3;
+	display: none;
+
+	background-color:#666666;
+	border:1px solid #666666;
+	color:#fcfcfc;
+
+	padding:10px;
+
+	-moz-border-radius:12px;	/* rounded corners */
+	-khtml-border-radius: 12px;
+	-webkit-border-radius: 12px;
+	border-radius:12px;
+}
